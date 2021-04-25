@@ -1,0 +1,33 @@
+# ---------------------------------------MAP-------------------------------------------
+# number = ["3","2", "5", "6"]
+# print(number)
+# # print(map(int,number))
+# numbers = list(map(int,number))
+# # for i in range(len(number)):
+# #     number[i] = int(number[i])
+# print(numbers)
+#
+# sq = list(map(lambda x: x*x , numbers)) # lamda one liner function, takes input and return something
+# print("Squares of list:",sq)
+
+# ----------------------------------------Filter-------------------------------------------
+# list_1 = [1,2,43,4,5,6,67,4,332,43,23,65,76]
+#
+# def isgreaterthn5(num):
+#     return num>5
+# gr_thn_5 = list(filter(isgreaterthn5,list_1))
+#
+# print(gr_thn_5)
+
+# ----------------------------------------Reduce---------------------------------------------
+
+from functools import reduce
+
+lst = [1,2,3,4,5]
+# num = 0
+# for i in lst:
+#     num += i
+# print(num)
+
+num = reduce(lambda x,y: x*y, lst)
+print(num)
